@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kei Fong Lam</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<style type="text/css">
+		/*Default style for SPAN icons. Edit if desired: */
+		.iconspan{
+			float: left;
+			cursor:hand;
+			cursor:pointer;
+			font-weight: bold;
+			margin-top: 3px;
+			margin-right: 6px;
+			margin-bottom: 3px;
+			margin-left: 3px;
+		}
+		/*CSS used to style the examples. Remove if desired: */
+		.eg-bar{
+			font-weight: normal;
+			padding: 3px;
+		}
+		.iconspan1 {float: right;
+		margin: 3px;
+		cursor:hand;
+		cursor:pointer;
+		font-weight: bold;
+		}
+		.icongroup1 {
+		    margin-left: 25px;
+		}
+		body {
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+		</style>
+		<script>
+		function ShowAndHide(){
+			var x = document.getElementById('SectionName');
+			if (x.style.display == 'none'){
+					x.style.display = 'block';
+			} else {
+					x.style.display = 'none';
+			}
+		}
+		</script>
+	</head>
+
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/about">About</a></li>
+						<li><a href="/research">Research</a></li>
+						<li><a href="/publication">Publications</a></li>
+						<li><a href="/teaching">Teaching</a></li>
+    		</ul>
+		</nav>
+
+		<!--Main-->
+		<div class="container">
+    		<div class="blurb">
+
+				I classify myself as a <b>theoretical applied mathematician</b> - a person that studies problems arising from applied sciences (like biological growth and fluid flow) and aims for theoretical results.  My work mainly involves proving mathematical theorems about various models used in applied sciences.  These are statements regarding certain properties of solutions to partial differential equations that would be useful for scientists.  Below you can find a brief summary of my research interests and the research projects I am responsible as principal investigator.
+
+				<h2> Research Interests </h2>
+				<ul>
+					<li><strong>Mathematical Modelling</strong>
+						<br>Derive mathematical models for multi-component materials and fluids with applications in biological sciences and industry, such as tumour growth and soluble surfactants in two-phase flows.
+					</li>
+
+					<br>
+
+					<li><strong>Analysis</strong>
+						<br>
+						Mathematical analysis of coupled systems of elliptic and parabolic partial differential equations, sometimes with degenerate and singular terms. Establishing important properties such as existence and uniqueness of solutions, and various interesting asymptotic limits.
+					</li>
+					<br>
+
+					<li><strong>Optimal Control</strong>
+					<br>
+					Employ optimal control methodology and Tikhonov regularisation to solve inverse identification problems inferring model parameters from data, and geometric inverse problems identifying location of interfaces between two different materials. Investigate convergence to solutions of the original inverse problem as the Tikhonov parameter tends to zero.
+					</li>
+					<br>
+
+					<li><strong>Numerical schemes</strong>
+					<br>
+					Develop energy stable numerical schemes for the simulation of nonlinear partial differential equations with bulk-surface interactions and dynamic boundary conditions. Establish existence and convergence of discrete solutions.
+					</li>
+				</ul>
+
+				<h2> Research projects funded by Hong Kong RGC General Research Fund (as Principal Investigator) </h2>
+
+				<div class="CodeString">
+					<ol>
+						<li><strong>Modelling and analysis of diffuse interface models for two-phase micropolar fluid flows</strong>
+						[RGC project number <a href="https://cerg1.ugc.edu.hk/cergprod/scrrm00542.jsp?proj_id=14303420&old_proj_id=null&proj_title=&isname=Lam&ioname=Kei+Fong&institution=&subject=&pages=1&year=&theSubmit=14303420">(14303420)</a>]
+						<br><br>
+
+						<button id="Show" style="display: none;" onclick="document.getElementById('Show').style.display='none'; document.getElementById('Hide').style.display='block'; document.getElementById('proj3').style.display='none'">Hide details</button>
+
+						<button id="Hide" style="display: block;" onclick="document.getElementById('Show').style.display='block'; document.getElementById('Hide').style.display='none'; document.getElementById('proj3').style.display='block'">More details</button>
+
+						<div id="proj3" style="display: none;">
+							<br>
+							Period: 01/01/2021 to 31/12/2023. Funding: $555,754 HKD
+							<br>
+							<br>
+							<b>Abstract</b>: Micropolar fluids are among the simplest cases of fluids with microstructures, where each fluid particle has its own internal rotations. Examples include ferrofluids, blood flows, bubbly liquids and liquid crystals, all of which play significant and important roles in various industries and also in the human body. Therefore, it becomes essential for scientists to effectively capture the behaviour of these kinds of fluids with the appropriate mathematical models, and to better analyse and simulate their flow dynamics. The classical Navier-Stokes equations that are well-studied by the mathematical community is not a suitable description for micropolar fluids, as the internal rotations of each fluid particle are not accounted for.
+							<br><br>
+							Through the works of A. Cemal Eringen and his coworkers, we now have mathematical models that extend the Navier-Stokes equations to capture these internal rotations. However, in many real world applications we often encounter mixtures of multiple kinds of fluids. In these situations we have to further extend previous models to account for the interactions between individual fluids that can influence the gross motion of the mixture. The main aims of this proposal are to develop new mathematical models for mixtures of micropolar fluids, study their mathematical properties, and derive stable and efficient fully discrete numerical schemes for simulations. The key ingredient is the diffuse interface methodology which offers a model that is amenable to further mathematical analysis and allows us to address the existence of weak solutions and the stability of discrete solutions. Also included in the modelling is the dynamics of the contact line that is created when two or more fluids meet at the same solid boundary. This describes wetting and dewetting processes crucial in modern-day applications such as inkjet printing and lubrication.
+							<br>
+							<br>
+						</div>
+						</li>
+
+						<br>
+						<li><strong>On Cahn-Hilliard models with singular potentials and source terms</strong> [RGC project number  <a href="https://cerg1.ugc.edu.hk/cergprod/scrrm00542.jsp?proj_id=14302319&old_proj_id=null&proj_title=&isname=Lam&ioname=Kei+Fong&institution=&subject=&pages=1&year=&theSubmit=14302319">(14302319)</a>]
+
+							<br><br>
+
+							<button id="Show2" style="display: none;" onclick="document.getElementById('Show2').style.display='none'; document.getElementById('Hide2').style.display='block'; document.getElementById('proj2').style.display='none'">Hide details</button>
+
+							<button id="Hide2" style="display: block;" onclick="document.getElementById('Show2').style.display='block'; document.getElementById('Hide2').style.display='none'; document.getElementById('proj2').style.display='block'">More details</button>
+
+							<div id="proj2" style="display: none;">
+								<br>
+								Period: 01/09/2019 to 31/08/2022. Funding: $502,444 HKD
+								<br>
+								<br>
+								<b>Abstract</b>: The Cahn-Hilliard (CH) equation is a fourth order nonlinear partial differential equation (PDE) originally used to model the separation of a mixture containing two phases of matter, such as water and oil, and is now an ubiquitous component of many mathematical models in applied sciences. It is formulated with a nonconvex potential function, usually taken as a smooth polynomial, that possesses two equal minima, say &minus;1 and 1. Through the addition of appropriate source terms, the CH equation has seen recent applications in modelling the growth of tumours and in repairing damaged black-and-white images (also known as inpainting). However, an unfortunate feature with a polynomial potential is that the solution may not stay bounded in between &minus;1 and 1, and undesirable effects, such as negative mass densities in tumour models or new shades of colour in black-and-white images, can occur.
+								<br>
+								<br>
+								A remedy is to employ singular potentials, such as a logarithmic-type function, to ensure that the solution to the model stays in between &minus;1 and 1. For recent applications in tumour growth and inpainting, the new combination of singular potentials and source terms has not received much attention in the literature, and current analytical studies are mostly confined to establishing the existence of weak solutions. In this project, we plan to expand the scope of the analysis for these new Cahn-Hilliard models with singular potentials and source terms by investigating the issues of uniqueness and regularity of solutions, as well as addressing the existence of stationary solutions analytically and also numerically.
+								<br>
+								<br>
+								<b>Research outputs</b>:
+								<ul>
+									<br>
+									<li>M. Ebenbeck and K.F. Lam. <b>Weak and stationary solutions to a Cahn-Hilliard-Brinkman model with singular potentials and source terms</b>. Adv. Nonlinear Anal., <b>10</b>:24--65 (2020)
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<br>
+
+						<li><strong>Mathematical studies of a phase field approach to shape optimization</strong>[RGC project number <a href="https://cerg1.ugc.edu.hk/cergprod/scrrm00542.jsp?proj_id=14302218&old_proj_id=null&proj_title=&isname=Lam&ioname=Kei+Fong&institution=&subject=&pages=1&year=&theSubmit=14302218">(14302218)</a>]
+
+							<br><br>
+
+							<button id="Show1" style="display: none;" onclick="document.getElementById('Show1').style.display='none'; document.getElementById('Hide1').style.display='block'; document.getElementById('proj1').style.display='none'">Hide details</button>
+
+							<button id="Hide1" style="display: block;" onclick="document.getElementById('Show1').style.display='block'; document.getElementById('Hide1').style.display='none'; document.getElementById('proj1').style.display='block'">More details</button>
+
+							<div id="proj1" style="display: none;">
+								<br>
+								Period: 01/01/2019 to 31/12/2021. Funding: $456,452 HKD
+								<br>
+								<br>
+								<b>Abstract</b>: In shape optimization problems, the aim is to find a class of shapes that optimizes some prescribed goals under a partial differential equation (PDE) constraint. The classical formulation for such problems involves representing the unknown shape as a mathematical surface, and seeks to derive optimality conditions (equations/inequalities involving nonlinear PDEs). The optimal shapes can then be realized numerically by solving the optimality conditions. However, shape optimization problems are often severely ill-posed (as the existence of optimal shapes is not guaranteed in general) and can be computationally intensive (due to the requirement of a new approximation of the computational domain at every numerical iteration).
+								<br>
+								<br> We propose to use a phase field approach to overcome the above problems, since it has several important mathematical and numerical advantages over the classical approach; namely the phase field method can be justified (in the sense that existence of optimal shapes can be proved rigorously) and in addition both the PDE constraint and the optimality conditions are solved on the same fixed domain throughout the optimization procedure. Furthermore, by sending a small parameter to zero, the optimality conditions from the classical formulation are recovered. Hence, one may view the phase field approach as a consistent approximation for shape optimization problems. The goal of this proposal is to develop phase field approximations to study nonlinear inverse problems that can be casted as shape optimization problems.
+								<br>
+								<br>
+								<b>Research outputs</b>:
+								<ul>
+									<br>
+									<li>K.F. Lam and I. Yousept. <b>Consistency of a phase field regularization for an inverse problem governed by a quasilinear Maxwell system</b>. Inverse Problems, <b>36</b> (2020) 040511 (33pp)
+									</li>
+								</ul>
+							</div>
+							</li>
+					</ol>
+				</div><!--CodeString-->
+        </div><!-- /.blurb -->
+    </div><!-- /.container -->
+    <footer>
+        <ul>
+            <!--<li><a href="mailto:akflam@hkbu.edu.hk">email</a></li>-->
+            <!--<li><a href="https://github.com/andrewkflam">github.com/andrewkflam</a></li>-->
+      </ul>
+    </footer>
+  </body>
+</html>
