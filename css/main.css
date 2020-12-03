@@ -33,8 +33,9 @@ h3 {
     font-family:'Times New Roman', 'Times', 'serif';
 }
 p {
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.4em;
+    font-family:'Times New Roman', 'Times', 'serif';
     color: #333;
 }
 footer {
