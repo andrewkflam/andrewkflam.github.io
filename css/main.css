@@ -46,6 +46,19 @@ p {
     font-family:'Times New Roman', 'Times', 'serif';
     color: #333;
 }
+
+table {
+    font-family:'Times New Roman', 'Times', 'serif';
+    border-collapse: collapse;
+    width: 100%;    
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
