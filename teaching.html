@@ -58,11 +58,11 @@
 						<b>Description</b>: Shape optimization is a computational technique that identifies a shape of an object that fulfils some sort of objective. For example, when designing the wings of an airplane, the designer aims to find a shape for the wing that minimizes drag forces while maximizes lift forces so that the aircraft becomes more fuel efficient.  On the other hand, topology optimization is a different technique aimed at identifying the best topology of an object, usually translating to the optimal number of holes. Together these form part of the cornerstones of the current 3D printing technology, where a design with a highly complex shape can be created. In this project we will attempt to understand the basic ideas behind shape and topology optimization through a mathematical formulation of a test problem, and explore some of the numerical methods used to simulate these optimal designs.			
 					</div>
 					
-					<br><br>
+					<!-- <br><br>
 					<b>Students involved</b>: 
 					<ul>
-						<li>Xiao MENG (Summer 2021)</li>
-					</ul>
+						<li>Xiao MENG (Summer 2021)</li> 
+					</ul>-->
 				<br>
 				<br>
 				<li> <b>Using artificial neural networks to simulate differential equations</b>
@@ -74,19 +74,57 @@
 						<br>
 						<b>Description</b>: In recent years artifical neural networks have seen successful applications in many areas of scientific interest, such as image classification, handwriting and speech recognition, and computer vision.  There is current interest in using these neural networks to emulate classical mathematical models in physical sciences.  These models can become very complicated very easily if we need to capture the appropriate physics and their numerical simulations often take a long time to complete.  One purpose of these neural networks is to build approximating models that yield faster simulation time, but still retain the physical principles of the system we are studying. In this project we will explore how to solve differential equations (ordinary/partial) with neural networks and insert the appropriate physics into these networks.
 					</div>
-					<br><br>
+					<!--<br><br>
 					<b>Students involved</b>: 
 					<ul>
 						<li> Yiqi WANG (Summer 2021) </li>
-						<li> Yuanhang LUO (Summer 2021) </li>
-					</ul>
+						<li> Yuanhang LUO (Summer 2021) </li> 
+					</ul>-->
+				</li>
+				<br><br>
+				<li> <b> Modelling and simulation of toxic plumes</b>
+					<div style="display:inline-block">
+						<button id="Show3" style="display: none;" onclick="document.getElementById('Show3').style.display='none'; document.getElementById('Hide3').style.display='block'; document.getElementById('fyp3').style.display='none'">Hide</button>
+						<button id="Hide3" style="display: block;" onclick="document.getElementById('Show3').style.display='block'; document.getElementById('Hide3').style.display='none'; document.getElementById('fyp3').style.display='block'">Description</button>
+					</div>
+					<div id="fyp3" style="display: none;">
+						<br>
+						<b>Description</b>: Accidental gas release from industrial sites can result in a dangerous accumulation of pollutants in the air. The movement of this collection of pollutants (also called plume) is extremely important for risk assessments. At present there are many software proposed to simulate how pollutants in the atmosphere disperse, and in this project we will explore some of these atmospheric dispersion models. Namely we are interested in how they model the movement of the pollutants by incorporating various meteorological, terrain, physical and chemical characteristics. Then, we will simulate some simplified variants of these models and conduct a comparison. If there is time, we will explore the inverse problem of trying to identify the possible locations of the source of the toxic plume from measurements.
+					</div>
+				</li>
+				
+				<br><br>
+				<li> <b> Modelling and simulation of multiagent interactions</b>
+					<div style="display:inline-block">
+						<button id="Show4" style="display: none;" onclick="document.getElementById('Show4').style.display='none'; document.getElementById('Hide4').style.display='block'; document.getElementById('fyp4').style.display='none'">Hide</button>
+						<button id="Hide4" style="display: block;" onclick="document.getElementById('Show4').style.display='block'; document.getElementById('Hide4').style.display='none'; document.getElementById('fyp4').style.display='block'">Description</button>
+					</div>
+					<div id="fyp3" style="display: none;">
+						<br>
+						<b>Description</b>: The movement of a population of birds, fishes and people tend to harmonize even though individual agents only have limited information regarding their immediate surroundings. These types of collective behavior emerge from local interactions between multiple agents in a process of self- organization. In this project we will explore how to model the interactions between a group of agents and the conditions that will lead to the emergence of collective behavior. Specifically, we will focus on the famous Cucker–Smale model for flocking and the Kuramoto model for synchronization. Similar ideas are used also for modeling human crowd behavior. Then, we will conduct numerical simulations to replicate these collective behaviors.
+					</div>
 				</li>
 
 			</ul>
 		</div>
 				
 
-		<h2> Student Supervision Experience (Previous Institutions)</h2>
+		<h2> Student Supervision Experience </h2>
+		
+		<h4> HKBU </h4>
+		
+		<ul> 
+			<li> 2021 Summer: 
+				<ul>
+					<li><b>Kepan CAO</b> (Line search and trust region methods in optimization) </li>
+					<li><b>Kwok Ho Hody CHANG</b> (TBA) </li>
+					<li><b>Yuanhang LUO</b> (Residual neural networks for approximating ordinary differential equations) </li>
+					<li><b>Xiao MENG</b> (Introduction to shape calculus and shape optimization) </li>
+					<li><b>Yiqi WANG</b> (Using artifical neural networks to simulate differential equations) </li>
+				</ul>
+			</li>
+			
+		</ul>
 		
 		<h4> Undergraduate capstone projects (at CUHK) </h4>
 		
