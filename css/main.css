@@ -74,35 +74,91 @@ ul.posts li {
 }
 
 /* The sidebar menu */
-.sidenav {
-  /* height: 100%; Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PP Eiko';
+  transition: all.2s ease-out;
 }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+html{
+  scroll-behavior: smooth;
+}
+
+.sidesection{
+  height: 500vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.sidesection section{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 500;
+  background: #E3E0D8;
+  color: #211C19;
+  text-transform: uppercase;
+}
+
+/* MENU START HERE */
+
+.current{
+  font-weight: 500;
+  color: rgba(33,28,25,1)!important;
+}
+
+.progress{
+  position: fixed;
+  top: 50%;
+  left: 75px;
+  transform: translateY(-50%);
+}
+
+.progress ul{
+  list-style: none;
+  height: 200px;
+  /*width: 80px;*/
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  flex-flow: column;
+  position: relative;
+}
+
+.progress ul li{
+  z-index: 1;
+}
+
+.progress ul li a{
+  
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+  width: 100%;
+  font-weight: 500;
+  /*background: white;*/
+  color: rgba(33,28,25,0.6);
+  /*border: 1px solid #211C19;
+  border-radius: 12px;
+  padding: 8px;*/
+  letter-spacing: 1px;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.progress ul li a:hover{
+  color: rgba(33,28,25,1);
 }
 
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+ul .sideline{
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  height: 0px;
+  width: 4px;
+  background: #514A46;
+  border-radius: 20px;
+  left: -25px;
 }
-
