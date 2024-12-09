@@ -72,3 +72,83 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+html{
+    scroll-behaviour: smooth;
+}
+
+.sidesection{
+  height: 300vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.sidesection section{
+  height: 50%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 500;
+  background: #E3E0D8;
+  color: #211C19;
+  text-transform: uppercase;
+}
+
+/* MENU START HERE */
+
+.current{
+  font-weight: 500;
+  color: rgba(33,28,25,1)!important;
+}
+
+.progress{
+  position: fixed;
+  top: 50%;
+  left: 75px;
+  transform: translateY(-50%);
+}
+
+.progress ul{
+  list-style: none;
+  height: 200px;
+  /*width: 80px;*/
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  flex-flow: column;
+  position: relative;
+}
+
+.progress ul li{
+  z-index: 1;
+}
+
+.progress ul li a{
+  
+  text-decoration: none;
+  width: 100%;
+  font-weight: 500;
+  /*background: white;*/
+  color: rgba(33,28,25,0.6);
+  /*border: 1px solid #211C19;
+  border-radius: 12px;
+  padding: 8px;*/
+  letter-spacing: 1px;
+}
+
+.progress ul li a:hover{
+  color: rgba(33,28,25,1);
+}
+
+ul .sideline{
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  height: 0px;
+  width: 4px;
+  background: #514A46;
+  border-radius: 20px;
+  left: -25px;
+}
